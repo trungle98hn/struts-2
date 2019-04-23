@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+.content {
+	font-family: sans-serif;
+	font-size: small;
+}
+
+.userTable {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: outset outset outset outset;
+	border-color: black black black black;
+	border-collapse: collapse;
+}
+
+.userTable td {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: outset outset outset outset;
+	border-color: black black black black;
+	border-collapse: collapse;
+}
+
+.userTable th {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: outset outset outset outset;
+	border-color: black black black black;
+	border-collapse: collapse;
+	background-color: rgb(255, 255, 255);
+}
+
+.odd {
+	background-color: #FFFFF0;
+}
+
+.even {
+	background-color: #FAF0E6;
+}
+
+form {
+	width: 100%;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+input[type=text], select {
+	width: 260px;
+	padding: 12px 20px;
+	margin: 6px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 18px;
+	box-sizing: border-box;
+	font-weight: bold;
+}
+
+input[type=submit] {
+	width: 100px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 11px 9px;
+	margin: 2px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+label {
+	    font-weight: bold;
+}
+option{
+	font-weight: bold;	
+}
+checkboxLabel {
+    font-weight: bold;
+}
+radio{	
+    font-weight: bold;
+}

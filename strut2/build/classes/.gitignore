@@ -1,0 +1,11 @@
+/ApplicationResources.properties
+/control/
+/entity/
+/global_en.properties
+/global_vi.properties
+/hibernate.cfg.xml
+/interceptor/
+/login-validation.xml
+/model/
+/saveOrUpdate-validation.xml
+/struts.xml

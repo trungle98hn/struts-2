@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd" >
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation"
+		value="false" />
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.custom.i18n.resources"
+		value="ApplicationResources" />
+	<constant name="struts.custom.i18n.resources" value="global" />
+	
+	<package name="default" extends="hibernate-default">
+
+	
+		
+		<action name="saveOrUpdateCate" method="saveOrUpdate"
+			class="control.categoryAction">
+			<result name="success" type="redirect">listCategory</result>
+		</action>
+		<action name="listCategory" method="list"
+			class="control.categoryAction">
+
+			<result name="success">/category.jsp</result>
+		</action>
+		<action name="editCategory" method="edit"
+			class="control.categoryAction">
+			<result name="success">/category.jsp</result>
+		</action>
+		<action name="deleteCategory" method="delete"
+			class="control.categoryAction">
+			<result name="success" type="redirect">listCategory</result>
+		</action>
+
+		<!-- language -->
+
+		<action name="saveOrUpdateLanguage" method="saveOrUpdate"
+			class="control.languageAction">
+			<result name="success" type="redirect">listLanguage</result>
+			<result name="input" type="redirect">listLanguage</result>
+		</action>
+		<action name="listLanguage" method="list"
+			class="control.languageAction">
+			<result name="success">/language.jsp</result>
+		</action>
+		<action name="editLanguage" method="edit"
+			class="control.languageAction">
+			<result name="success">/language.jsp</result>
+		</action>
+		<action name="deleteLanguage" method="delete"
+			class="control.languageAction">
+			<result name="success" type="redirect">listLanguage</result>
+		</action>
+
+		<!-- pubhouse -->
+
+		<action name="saveOrUpdatePubhouse" method="saveOrUpdate"
+			class="control.pubhouseAction">
+			<result name="success" type="redirect">listPubhouse</result>
+			<result name="input">/pubhouse.jsp</result>
+		</action>
+		<action name="listPubhouse" method="list"
+			class="control.pubhouseAction">
+			<result name="success">/pubhouse.jsp</result>
+		</action>
+		<action name="editPubhouse" method="edit"
+			class="control.pubhouseAction">
+			<result name="success">/pubhouse.jsp</result>
+		</action>
+		<action name="deletePubhouse" method="delete"
+			class="control.pubhouseAction">
+			<result name="success" type="redirect">listPubhouse</result>
+		</action>
+
+
+		<!-- SAch -->
+
+		<action name="saveOrUpdateSach" method="saveOrUpdate"
+			class="control.sachAction">
+			<result name="success" type="redirect">listSach</result>
+		</action>
+		<action name="listSach" method="list"
+			class="control.sachAction">
+			<result name="success">/sach.jsp</result>
+		</action>
+		<action name="editSach" method="edit"
+			class="control.sachAction">
+			<result name="success">/sach.jsp</result>
+		</action>
+		<action name="deleteSach" method="delete"
+			class="control.sachAction">
+			<result name="success" type="redirect">listSach</result>
+		</action>
+
+		<!-- Authentication -->
+
+
+		<action name="login" class="control.AuthAction" method="login">
+			
+			<result name="success" type="redirect">listSach</result>
+			<result name="input">/login.jsp</result>
+		</action>
+
+
+
+	</package>
+
+
+</struts>

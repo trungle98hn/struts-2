@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <validators>  
+          
+        <field name="username">  
+        <field-validator type="requiredstring">  
+        <message>Email Id can't be blank</message>  
+        </field-validator>  
+        <field-validator type="email">  
+        <message>Please enter correct email id</message>  
+        </field-validator>  
+          
+        </field>  
+          
+          
+          
+        </validators>  
